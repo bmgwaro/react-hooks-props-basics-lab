@@ -2,8 +2,8 @@ import React from "react";
 import Links from "./Links";
 
 function About(props) {
-  const { bio, isPassed, links } = props;
-  if (isPassed) {
+  const { bio, links } = props;
+  
     return (
       <div id="about">
         <h2>About Me</h2>
@@ -12,9 +12,6 @@ function About(props) {
         <Links github={links.github} linkedin={links.linkedin} />
       </div>
     );
-  }
-
-  return null;
 }
 
 export default About;
